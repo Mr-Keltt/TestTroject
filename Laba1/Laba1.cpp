@@ -5,11 +5,16 @@
 
 using namespace std;
     
+double s(double a)
+{
+    return (a * a - (a / 2) * (a / 2) * M_PI) / 2;
+}
+
 int main()
 {
     setlocale(0, "");
     double a;
     cout << "Введите длину стороны квадрата: ";
     cin >> a;
-    cout << setprecision(3) << (a * a - (a / 2) * (a / 2) * M_PI) / 2;
+    cout << setprecision(3) << s(a);
 }
